@@ -1,24 +1,12 @@
 # iCloud 验证码查找
 
-中文 · [English](./README_EN.md)
+中文 · [English](README_EN.md)
 
-[![Release](https://img.shields.io/github/v/release/ferretgeek/icloud-code-finder?display_name=tag&style=flat-square&label=%E7%89%88%E6%9C%AC)](https://github.com/ferretgeek/icloud-code-finder/releases)
-[![CI](https://img.shields.io/github/actions/workflow/status/ferretgeek/icloud-code-finder/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/ferretgeek/icloud-code-finder/actions/workflows/ci.yml)
-[![CodeQL](https://img.shields.io/github/actions/workflow/status/ferretgeek/icloud-code-finder/codeql.yml?branch=main&style=flat-square&label=CodeQL)](https://github.com/ferretgeek/icloud-code-finder/actions/workflows/codeql.yml)
-[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square)](https://www.python.org/)
-[![License](https://img.shields.io/github/license/ferretgeek/icloud-code-finder?style=flat-square&label=%E8%AE%B8%E5%8F%AF)](./LICENSE)
+从 iCloud 邮箱最近的邮件中查找验证码，可按时间和收件地址筛选，方便查找发给某个别名的邮件。
 
-![界面预览](./docs/images/social-preview.png)
+适用环境：Windows、macOS 或 Linux，Python 3.10+；需 iCloud 邮箱和 Apple App 专用密码，并联网读取邮箱，不能使用 Apple 登录密码。
 
-> 从 iCloud 邮箱最近的邮件里直接找出验证码。用 App 专用密码，只读，用完即忘。
-
-## 为什么会需要它
-
-等验证码的那三十秒是最烦的：切到邮件 App、下拉刷新、点开、长按选中六位数字、复制、切回去。如果你还开了 Hide My Email，可能还得先想清楚这封信是发到哪个别名的。
-
-这个工具把它压成一次操作：填邮箱、选时间范围、扫描，验证码直接列出来。
-
-**它不保存任何东西。** App 专用密码只在这一次请求的内存里，结束就清空；邮件、扫描结果、邮箱地址都不落盘。发件人和收件人在界面上默认遮罩。
+[使用准备](#使用准备) · [本地运行](#本地运行) · [部署教程](docs/DEPLOYMENT.md)
 
 ## 界面
 

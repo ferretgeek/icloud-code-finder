@@ -1,24 +1,12 @@
 # iCloud code finder
 
-[中文](./README.md) · English
+[中文](README.md) · English
 
-[![Release](https://img.shields.io/github/v/release/ferretgeek/icloud-code-finder?display_name=tag&style=flat-square)](https://github.com/ferretgeek/icloud-code-finder/releases)
-[![CI](https://img.shields.io/github/actions/workflow/status/ferretgeek/icloud-code-finder/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/ferretgeek/icloud-code-finder/actions/workflows/ci.yml)
-[![CodeQL](https://img.shields.io/github/actions/workflow/status/ferretgeek/icloud-code-finder/codeql.yml?branch=main&style=flat-square&label=CodeQL)](https://github.com/ferretgeek/icloud-code-finder/actions/workflows/codeql.yml)
-[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square)](https://www.python.org/)
-[![License](https://img.shields.io/github/license/ferretgeek/icloud-code-finder?style=flat-square)](./LICENSE)
+Find verification codes in recent iCloud messages. Filter by time and recipient address to locate mail sent to a particular alias.
 
-![Interface preview](./docs/images/social-preview.png)
+Requirements: Windows, macOS, or Linux with Python 3.10+, an iCloud mailbox, an Apple app-specific password, and a network connection. Your Apple sign-in password is not accepted.
 
-> Pull verification codes straight out of recent iCloud mail. App-specific password, read-only, forgotten immediately.
-
-## Why this exists
-
-The thirty seconds spent waiting for a code is the annoying part: switch to Mail, pull to refresh, open the message, long-press the six digits, copy, switch back. If you use Hide My Email you may also have to work out which alias it went to first.
-
-This compresses that into one action: enter the address, pick a time range, scan, and the codes are listed.
-
-**It stores nothing.** The app-specific password exists only in memory for one request and is cleared afterwards; messages, results, and addresses never touch disk. Senders and recipients are masked on screen by default.
+[Before you start](#before-you-start) · [Run locally](#running-locally) · [Deployment](docs/DEPLOYMENT_EN.md)
 
 ## Interface
 
